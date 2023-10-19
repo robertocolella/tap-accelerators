@@ -7,7 +7,7 @@ spec:
   git:
     ref:
       branch: main
-    url: https://github.com/alexandreroman/awesome-tap-accelerators
+    url: https://github.com/robertocolella/awesome-tap-accelerators
     subPath: node-express
 ---
 apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
@@ -18,7 +18,7 @@ spec:
   git:
     ref:
       branch: main
-    url: https://github.com/alexandreroman/awesome-tap-accelerators
+    url: https://github.com/robertocolella/awesome-tap-accelerators
     subPath: java-spring-boot
 ---
 apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
