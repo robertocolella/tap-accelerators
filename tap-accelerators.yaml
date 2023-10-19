@@ -1,0 +1,46 @@
+---
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: awesome-node-express
+spec:
+  git:
+    ref:
+      branch: main
+    url: https://github.com/alexandreroman/awesome-tap-accelerators
+    subPath: node-express
+---
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: java-spring-boot
+spec:
+  git:
+    ref:
+      branch: main
+    url: https://github.com/alexandreroman/awesome-tap-accelerators
+    subPath: java-spring-boot
+---
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: demoinputtype
+spec:
+  git:
+    ref:
+      branch: main
+    url: https://github.com/robertocolella/tap-accelerators
+    subPath: demoInputTypes
+---
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: simple
+  namespace: accelerator-system
+spec:
+  git:
+    url: https://github.com/robertocolella/tap-accelerators.git
+    subPath: simple
+    ref:
+      branch: main
+    
