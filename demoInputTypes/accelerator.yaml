@@ -1,0 +1,79 @@
+accelerator:
+  displayName: Demo Input Types
+  description: "Accelerator with options for each inputType"
+  iconUrl: https://raw.githubusercontent.com/vmware-tanzu/application-accelerator-samples/main/icons/icon-cloud.png
+  tags: ["demo", "options"]
+
+  options:
+
+  - name: text
+    display: true
+    defaultValue: Text value
+
+  - name: toggle
+    display: true
+    dataType: boolean
+    defaultValue: true
+
+  - name: dependsOnToggle
+    label: 'depends on toggle'
+    description: Visibility depends on the value of the toggle option being true.
+    dependsOn:
+      name: toggle
+    defaultValue: text value
+
+  - name: textarea
+    inputType: textarea
+    display: true
+    defaultValue: |
+      Text line 1
+      Text line 2
+
+  - name: checkbox
+    inputType: checkbox
+    display: true
+    dataType: [string]
+    defaultValue:
+      - value-2
+    choices:
+      - text: Checkbox choice 1
+        value: value-1
+      - text: Checkbox choice 2
+        value: value-2
+      - text: Checkbox choice 3
+        value: value-3
+
+  - name: dependsOnCheckbox
+    label: 'depends on checkbox'
+    description: Visibility depends on the checkbox option containing exactly value value-2.
+    dependsOn:
+      name: checkbox
+      value: [value-2]
+    defaultValue: text value
+
+  - name: select
+    inputType: select
+    display: true
+    defaultValue: value-2
+    choices:
+      - text: Select choice 1
+        value: value-1
+      - text: Select choice 2
+        value: value-2
+      - text: Select choice 3
+        value: value-3
+
+  - name: radio
+    inputType: radio
+    display: true
+    defaultValue: value-2
+    choices:
+      - text: Radio choice 1
+        value: value-1
+      - text: Radio choice 2
+        value: value-2
+      - text: Radio choice 3
+        value: value-3
+
+engine:
+  type: YTT
