@@ -15,4 +15,8 @@ tanzu accelerator generate-from-local \
     --server-url TANZU-APPLICATION-ACCELERATOR-URL `# Example: https://accelerator.mytapcluster.myorg.com` \
     --options '{"firstConfigurableParameter": "Parameter 1", "secondConfigurableParameterCheckbox": true, "secondConfigurableParameter":"Parameter 2"}' \
     -o "${HOME}/simple-accelerator/" `# Change this path to change where the project folder gets generated`
+```
+
+```shell
+tanzu accelerator create simple-accelerator --git-repository https://github.com/robertocolella/tap-accelerators.git --git-sub-path myProject --git-branch main
 ``````
