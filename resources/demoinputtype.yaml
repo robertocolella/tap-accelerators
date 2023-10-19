@@ -1,0 +1,10 @@
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: demoinputtype
+spec:
+  git:
+    ref:
+      branch: main
+    url: https://github.com/robertocolella/tap-accelerators
+    subPath: demoInputTypes

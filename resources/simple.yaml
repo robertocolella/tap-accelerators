@@ -1,0 +1,12 @@
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: simple
+  namespace: accelerator-system
+spec:
+  git:
+    url: https://github.com/robertocolella/tap-accelerators.git
+    subPath: simple
+    ref:
+      branch: main
+    
